@@ -4,10 +4,25 @@
 
 <style>
 
+.svg-1 path {
 
-.svg-1:hover path {
-  d: path("M8,2 L2,8");
 }
+
+.svg-1:active path{
+    d: path("M2,2 L8,5 L2,8");
+}
+
+/* .svg-1:hover path{
+  -ms-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+} */
+
+/* .svg-1:hover path {
+  d: path("M2,8 L5,2 L8,9");
+  transform: scale(2 1.5);
+} */
+
 
 body {
   display: flex;
@@ -28,7 +43,7 @@ svg path {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 
@@ -36,7 +51,7 @@ svg path {
 
 <body>
 
-<svg class="svg-1" viewBox="0 0 10 10">
+<svg viewBox="0 0 10 10" class="svg-1">
   <path d="M2,8 L5,2 L8,8"/>
 </svg>
 
